@@ -79,7 +79,7 @@ async function processData() {
         await new Promise(resolve => setTimeout(resolve, 2000));
         updateOutput(multiplyEvenNumbers(data).join(','));
     } catch (error) {
-        console.error('Error:', error);
+        console.log(error);
     }
 }
 
