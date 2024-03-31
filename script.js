@@ -12,12 +12,12 @@ function oddNumbers(arr) {
 }
 
 function ManipulatedNumber(arr) {
-	return arr.map((num) => num * 2)
+	return arr.map((num) => num * 2);
 }
 
 
 function updateResult(text) {
-	document.getElementById('output').innerHTML = test;
+	document.getElementById('output').innerHTML = text;
 }
 
 
@@ -34,8 +34,8 @@ async function processData() {
 			await new Promise((resolve) => { 
 			setTimeout(resolve);
 		},2000);
-		updateResult(ManipulatedNumber(data).join(", "))
+		updateResult(ManipulatedNumber(data).join(", "));
 		}catch(error) {
-		console.log(error)
+		console.log(error);
 		}
 }
