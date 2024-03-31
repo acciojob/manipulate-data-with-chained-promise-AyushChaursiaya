@@ -39,3 +39,5 @@ async function processData() {
 		console.log(error);
 		}
 }
+
+processData();
