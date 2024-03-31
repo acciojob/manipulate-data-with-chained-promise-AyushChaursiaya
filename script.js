@@ -73,11 +73,11 @@ async function processData() {
         
         // Display even numbers after 1 second
         await new Promise(resolve => setTimeout(resolve, 1000));
-        updateOutput(filterOddNumbers(data).join(', '));
+        updateOutput(filterOddNumbers(data).join(','));
         
         // Multiply even numbers by 2 after 2 seconds
         await new Promise(resolve => setTimeout(resolve, 2000));
-        updateOutput(multiplyEvenNumbers(data).join(', '));
+        updateOutput(multiplyEvenNumbers(data).join(','));
     } catch (error) {
         console.error('Error:', error);
     }
